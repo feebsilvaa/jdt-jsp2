@@ -17,7 +17,7 @@
 			let campo = $('#teste_jquery');			
 			$.ajax({
 				method: "POST",
-				url: "/jdt-jsp2/testarExcecaoJquery",
+				url: "/jdt-jgsp2/testarExcecaoJquery",
 				data: { valorParam: campo.val() }
 			}).done(function (res) {
 				console.log(res);
