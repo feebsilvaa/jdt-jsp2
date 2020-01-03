@@ -17,12 +17,12 @@
 			let campo = $('#teste_jquery');			
 			$.ajax({
 				method: "POST",
-				url: "/jdt-jgsp2/testarExcecaoJquery",
+				url: "/jdt-jsp2/testarExcecaoJquery",
 				data: { valorParam: campo.val() }
-			}).done(function (res) {
+			}).done(function (res) { // resposta de sucesso
 				console.log(res);
 				alert(res);
-			}).fail(function (res) {
+			}).fail(function (res, status, errorThrown) { // resposta de erro
 				console.log(res);
 				alert(res.responseText);
 				campo.focus();

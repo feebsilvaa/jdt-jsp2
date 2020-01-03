@@ -31,7 +31,6 @@ public class CapturarExcecaoJQueryServlet extends HttpServlet {
 			resp.setStatus(200);
 			resp.getWriter().write("Processada com sucesso. Resultado: " + resposta);
 		} catch (Exception e) {
-			e.printStackTrace();
 			resp.setStatus(500);
 			resp.getWriter().write("Erro ao processar: " + e);
 		}
