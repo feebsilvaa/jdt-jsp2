@@ -9,6 +9,13 @@
 </head>
 <body>
 	<h1>Capturando exceções com Jquery</h1>
+	
+
+	<jsp:include page="menu-pages.jsp" />
+	
+	<br>
+	<br>
+	
 	<input type="text" name="teste" id="teste_jquery" value="0">
 	<button onclick="testarExcecao();">testarExcecao</button>
 	
